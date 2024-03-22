@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import UserDetails from "./components/UserDetails";
 
 function App() {
+  const [toggle, setToggle] = useState(true);
+  const [token, setToken] = useState("");
+  console.log(token);
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Authorization App</h1>
+      {toggle ? !token && <SignUp /> : !token && <SignIn setToken={setToken} />}
+      {!token && (
+        <button className="toggle" onClick={handleToggle}>
+          ToggleForm
+        </button>
+      )}
+      {token && <UserDetails token={token} setToken={setToken} />}
+    </>
   );
 }
 
