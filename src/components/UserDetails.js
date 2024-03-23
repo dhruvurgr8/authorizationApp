@@ -32,6 +32,11 @@ const UserDetails = ({ token, setToken }) => {
 
   return (
     <>
+      <div className="btn-wrapper">
+        <button className="btn btn-warning" onClick={clearToken}>
+          Clear Token
+        </button>
+      </div>
       <h1>Token and user details</h1>
       <table>
         <thead>
@@ -54,7 +59,6 @@ const UserDetails = ({ token, setToken }) => {
             ))}
         </tbody>
       </table>
-      <button onClick={clearToken}>Clear Token</button>
     </>
   );
 };
