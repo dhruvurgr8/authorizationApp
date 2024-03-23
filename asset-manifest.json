@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/authorizationApp/static/css/main.90f8f950.css",
-    "main.js": "/authorizationApp/static/js/main.1178d383.js",
+    "main.css": "/authorizationApp/static/css/main.ab3ca310.css",
+    "main.js": "/authorizationApp/static/js/main.5d4e2a2e.js",
     "index.html": "/authorizationApp/index.html",
-    "main.90f8f950.css.map": "/authorizationApp/static/css/main.90f8f950.css.map",
-    "main.1178d383.js.map": "/authorizationApp/static/js/main.1178d383.js.map"
+    "main.ab3ca310.css.map": "/authorizationApp/static/css/main.ab3ca310.css.map",
+    "main.5d4e2a2e.js.map": "/authorizationApp/static/js/main.5d4e2a2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f8f950.css",
-    "static/js/main.1178d383.js"
+    "static/css/main.ab3ca310.css",
+    "static/js/main.5d4e2a2e.js"
   ]
 }
