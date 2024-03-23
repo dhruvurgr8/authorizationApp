@@ -15,11 +15,13 @@ function App() {
     <>
       <h1>Authorization App</h1>
       {toggle ? !token && <SignUp /> : !token && <SignIn setToken={setToken} />}
-      {!token && (
-        <button className="toggle" onClick={handleToggle}>
-          ToggleForm
-        </button>
-      )}
+      <div className="btn-wrapper">
+        {!token && (
+          <button className="toggle btn-warning" onClick={handleToggle}>
+            ToggleForm
+          </button>
+        )}
+      </div>
       {token && <UserDetails token={token} setToken={setToken} />}
     </>
   );

@@ -26,25 +26,27 @@ const SignUp = () => {
   return (
     <>
       <h1>SignUp</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="email" placeholder="Enter Email" name="email" />
-        <input type="text" placeholder="Enter the Name" name="name" />
-        <label>
-          Male:
-          <input type="radio" name="gender" value="MALE" />
-        </label>
-        <label>
-          Female:
-          <input type="radio" name="gender" value="FEMALE" />
-        </label>
-        <label>
-          Others:
-          <input type="radio" name="gender" value="OTHERS" />
-        </label>
-        <input type="password" placeholder="Enter Password" name="password" />
-        <input type="text" placeholder="enter city" name="city" />
-        <button>Submit Details</button>
-      </form>
+      <div className="form-wrapper">
+        <form className="form" onSubmit={handleSubmit}>
+          <input type="email" placeholder="Enter Email" name="email" />
+          <input type="text" placeholder="Enter the Name" name="name" />
+          <label>
+            Male:
+            <input type="radio" name="gender" value="MALE" />
+          </label>
+          <label>
+            Female:
+            <input type="radio" name="gender" value="FEMALE" />
+          </label>
+          <label>
+            Others:
+            <input type="radio" name="gender" value="OTHERS" />
+          </label>
+          <input type="password" placeholder="Enter Password" name="password" />
+          <input type="text" placeholder="enter city" name="city" />
+          <button className="btn-success">Submit Details</button>
+        </form>
+      </div>
     </>
   );
 };
